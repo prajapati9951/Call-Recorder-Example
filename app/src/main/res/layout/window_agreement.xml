@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal" >
+
+            <!--             <ImageViews -->
+            <!--                 android:layout_width="50dp" -->
+            <!--                 android:layout_height="50dp" -->
+            <!--                 android:layout_marginLeft="10dp" -->
+            <!--                 android:src="@drawable/ic_launcher" /> -->
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="Rename"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/widget_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp">
+            <EditText
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Login SuccessFully..."
+                android:lines="4"
+                android:textColor="#231F20"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50sp"
+            android:weightSum="4">
+            <EditText
+                android:id="@+id/rename"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/widget_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50sp"
+            android:weightSum="2"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark"
+                android:padding="5dp"
+                android:gravity="center"
+                android:lines="3"
+                android:textColor="#231F20"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="130dp"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/idbtnagreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="21dp"
+                android:background="@color/colorPrimaryDark" />
+            <!-- android:background="@drawable/btn_unselected" -->
+
+            <Button
+                android:id="@+id/idbtncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Cancel"
+                android:visibility="gone"
+                android:layout_marginLeft="50sp"
+                android:textColor="@android:color/white"
+                android:textSize="21dp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
